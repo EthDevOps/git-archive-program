@@ -12,4 +12,7 @@ orgs:
   - hyperledger #besu
   - status-im #nimbus
   - eth-clients
+  - ChainSafe #lodestar
+  - grandinetech
+  - paradigmxyz
 repos: []
