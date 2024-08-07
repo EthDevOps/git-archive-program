@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum Git Archive Program</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+            font-family: "Chakra Petch", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 50%;
+            padding-top: 20px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background: #f8f9fa;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        section {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="ef-logo.svg" alt="Ethereum Logo" style="margin-right: 50px;">
+            <h1>Ethereum Git Archive Program</h1>
+        </header>
+        <section>
+            <h2>About the Program</h2>
+            <p>
+            This program aims to preserve a copy of all ethereum relevant git repositories.</p>
+            <p>The copies are held at a read-only Gitea instance at <a href="https://git.ethquokkaops.io" target="_blank">git.ethquokkaops.io</a>
+              In addition this Gitea instance is backed up every day to off-site EF systems.
+            </p>
+        </section>
+        <section>
+            <h2>Frequently asked questions</h2>
+            <p>
+            <b>Which repos are synced?</b><br/>
+              👉  See the list of Synced Repositories below.
+            </p>
+            <p>
+              <b>Where are these repos synced to?</b><br/>
+              👉  We sync repos to a Gitea server hosted in the Berlin Office. <a href="https://git.ethquokkaops.io" target="_blank">git.ethquokkaops.io</a>
+            </p>
+            <p>
+              <b>How do I submit my Ethereum-related repo to Git Sync?</b><br/>
+              👉  See instructions below
+            </p>
+            <p>
+              <b>What are the qualifications for inclusion of my repo in Git Sync?</b><br/>
+              👉  The policy about inclusion are detailed on the Submit My Repo section.
+            </p>
+            <p>
+              <b>Where do I ask questions or point out problems?</b><br/>
+              👉  Please submit an issue on the project repo at <a target="_blank" rel="noopener" class="chakra-link css-1piu1ot" href="https://github.com/EthDevOps/git-archive-program/issues">EthDevOps/git-archive-program</a> and one of the maintainers will reply.
+            </p>
+            <p>
+              <b>Are Issues and pull requests also synced?</b><br/>
+              👉  Not at the moment. Gitea currently doesn't support that and a PR exists to add this feature. Once it's available we will activate this as well.
+            </p>
+        </section>
+        <section>
+            <h2>Synced repositories</h2>
+            <p>
+              We syncronise the fundamental orgs like:
+              <ul>
+                <li><code>ethereum</code></li>
+                <li><code>ethereumfoundation</code></li>
+                <li><code>ethdevops</code></li>
+                <li><code>ethpandaops</code></li>
+              </ul>
+
+              In addition everything listed in the <a href="https://github.com/EthDevOps/git-archive-program/blob/main/mirror-sources.yaml" target="_blank">mirror-sources.yaml</a>
+            </p>
+        </section>
+        <section>
+            <h2>Submit new Repo</h2>
+            <p>
+            If you would like to propose a repository for inclusion, please submit an issue to the Git-Sync project repo: <a target="_blank" rel="noopener" class="chakra-link css-1piu1ot" href="https://github.com/EthDevOps/git-archive-program/issues">EthDevOps/git-archive-program</a>.
+            </p>
+            <p>When you submit the issue, please specify the following information:
+            <ol style="margin-left: 1rem;">
+              <li>Project repo URL</li>
+              <li>Title and description</li>
+              <li>Maintainers and/or sync contact email address</li>
+              <li>Explanation if it is not immediately clear that the repo is Ethereum-related</li>
+              <li>Anything especially relevant or timely. For example: Is this repo about to be removed?</li>
+            </ol>
+            </p>
+            <p>
+              <h2 class="chakra-heading css-1289fp0">Criteria For Inclusion</h2>
+              <p>Generally, the repo would be fit for inclusion if it could be hosted under the ”ethereum” GitHub organization, a resource managed for the community by the Ethereum Foundation.</p>
+              <p>More specifically, inclusion means that the repo is:
+              <ol style="margin-left: 1rem;">
+                <li>Active</li>
+                <li>Relevant to the Ethereum network and community</li>
+                <li>Not too large in size</li>
+                <li>In compliance with laws (submissions are subject to legal review by the Ethereum Foundation)</li>
+              </ol>
+              </p>
+            </p>
+        </section>
+        <footer style="margin-bottom: 100px;margin-top: 20px;">
+          Maintained with ❤️  by EthQuokkaOps
+        </footer>
+    </div>
+</body>
+</html>
+
